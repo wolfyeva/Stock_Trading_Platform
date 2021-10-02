@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalProject.controllers.LogginController">
+   <children>
+      <TextField fx:id="_Name" layoutX="130.0" layoutY="108.0" />
+      <PasswordField fx:id="_Password" layoutX="130.0" layoutY="177.0" />
+      <Button layoutX="130.0" layoutY="311.0" mnemonicParsing="false" onAction="#onLogIn" prefHeight="44.0" prefWidth="104.0" text="Log In">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="368.0" layoutY="311.0" mnemonicParsing="false" onAction="#onCreateAccount" prefHeight="44.0" prefWidth="176.0" text="Create Account">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label focusTraversable="false" layoutX="35.0" layoutY="77.0" text="Account Name&#10;:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label focusTraversable="false" layoutX="60.0" layoutY="143.0" text="Password&#10;:" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="_WrongPassword" focusTraversable="false" layoutX="164.0" layoutY="207.0" text="Wrong Password!" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="_NotExist" focusTraversable="false" layoutX="163.0" layoutY="133.0" text="Account not exist!" textAlignment="CENTER" textFill="RED" visible="false">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
